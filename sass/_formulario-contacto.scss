@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@import 'navbar';
+@import 'footer';
+
+
+
+
+.container-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    .texto-seccion{
+        .texto-top{
+            font-size: 14px;
+            font-weight: 600;
+            color: $verde-principal;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .titulo-consulta{
+            font-size: 48px;
+            font-weight: 800;
+            .emoji{
+                font-size: 38px;
+                margin-bottom: 4px;
+            }
+        }
+        .parrafo-consulta{
+            color: $gris-texto;
+            padding-top: 37px;
+        }
+    }
+}
+
+.container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .form-control {
+        height: 50px;
+    }
+    #inputMessage {
+        min-height: 150px;
+    }
+    .form-label{
+        font-size: 14px;
+        color: $gris-texto;
+    }
+
+
+}
+
+
+
+.btn.bg-custom {
+    background-color: #03EBB3;
+    color: black;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px !important;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .btn.bg-custom:hover{
+    background-color: $verde-hover;
+  }
+
+  

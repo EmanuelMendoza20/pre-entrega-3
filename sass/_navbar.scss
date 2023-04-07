@@ -1,0 +1,29 @@
+/* Navbar */
+.navbar{
+    border-bottom: 1px solid #E6E6E6; 
+}
+
+.navbar-nav.ms-auto{
+    display: flex;
+    align-items: center;
+    .nav-item{
+        font-family: 'Plus Jakarta Sans', sans-serif ;
+        font-size: 14px;
+        font-weight: 600;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .btn.btn-primary{
+        background-color: $verde-principal;
+        color: black;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-family: 'Plus Jakarta Sans', sans-serif ;
+        font-size: 14px;
+    }
+    .btn.btn-primary:hover{
+        background-color: $verde-hover;
+    }
+}

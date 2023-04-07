@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+@import 'navbar';
+@import 'footer';
+
+.head-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    .text-top{
+        font-size: 14px;
+        font-weight: 500;
+        color: $verde-principal;
+        margin-bottom: 0;
+    }
+    .texto-seccion{
+        font-size: 48px;
+        font-weight: 800;
+        .emoji{
+            font-size: 38px;
+            margin-bottom: 4px;
+        }
+    }
+    .textos-parrafos{
+        width: 70%;
+        margin: auto;
+        padding-top: 37px;
+        .parrafo{
+            color: $gris-parrafo;
+            margin: auto;
+            margin-bottom: 0;
+            padding-top: 2px;
+            width: 75%;
+            text-align: center;
+            color: $gris-texto;
+        }
+    } 
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    
+    .fila-container{
+        display: flex;
+        flex-direction: row;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: center;
+        width: 67.5%;
+        border-radius: 10px;
+        .grid-hijo{
+            width: 100%;
+            .titulo-equipo{
+                padding-left: 40px;
+            }
+            .parrafo-equipo{
+                padding-left: 40px;
+            }
+
+        }
+    
+        .img-fila-historia{
+            width: 100%;
+            border-radius: 10px;
+            background-image: url(/img/quienes-somos1.png);
+        }
+        .img-fila-equipo{
+            width: 100%;
+            border-radius: 10px;
+            background-image: url(/img/quienes-somos2.png);
+        }
+        .img-fila-filosofia{
+            width: 100%;
+            border-radius: 10px;
+            background-image: url(/img/quienes-somos3.png);
+        }
+    }
+
+    .fila-diferente{
+        background-color: #F8F8F8;
+   
+    }
+
+    .fila-invertida{
+        flex-direction: row-reverse;
+    }
+
+
+
+    .img-fila{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-hijo p{
+        padding-top: 20px;
+        line-height: 150%;
+        font-weight: 400;
+        font-size: 16px;
+        width: 90%;
+        color: $gris-texto;
+    }
+
+    .grid-hijo h2{
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width:1500px){
+    .grid-container{
+        .fila-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+        
+        .grid-hijo{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+        .fila-diferente{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }  
+    }
+}
+
+@media (max-width:1500px){
+    .head-nosotros{
+        .textos-parrafos{
+            width: 100%;
+            .parrafo{
+                width: 70%
+            }
+        }
+    }
+}
